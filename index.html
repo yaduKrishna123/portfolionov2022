@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- hamburger -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
+    <div>
+      Logo Here
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+        <li class="links"><a href="#home">Home</a></li>
+        <li class="links"><a href="#about">About</a></li>
+        <li class="links"><a href="#videos">Videos</a></li>
+        <li class="links"><a href="">work</a></li>
+        <li class="links"><a href="">Book</a></li>
+        <li class="links"><a href="">Contact</a></li>
+    </ul>
+  </section>
+  <!-- end -->
+        <div class="first">
+            <ul id="menu">
+                <!-- <li class="links"><a href="#home">Home</a></li>
+                <li class="links"><a href="#about">About</a></li>
+                <li class="links"><a href="#videos">Videos</a></li>
+                <li class="links"><a href="">work</a></li>
+                <li class="links"><a href="">Book</a></li>
+                <li class="links"><a href="">Contact</a></li> -->
+            </ul>
+            <div class="line">  <section id="home"> <img class="line1" src="data:image/jpeg;base64,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">
+         <h1 class="newh"> SACHIN THENDULKAR</h1></section></div>
+          
+           
+        </div>
+        <div class="line">
+            <section id="about">
+               <div  class="row">
+                <div class="col">
+
+                    <img src="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/231355673.jpg">
+                </div>
+                <div id="d2" class="col">
+                   <img src="http://3.bp.blogspot.com/-SP_0wKC1WHo/UwY0d_Uz-II/AAAAAAAAYzQ/rjOlXuHP_nQ/s1600/Sachin+Tendulkar+Wallpapers+4.jpg">
+                </div>
+                <div id="d3" class="col">
+                    <img src="http://www.thestar.com/content/dam/thestar/sports/2013/10/10/sachin_tendulkar_indian_cricket_legend_to_retire_next_month/sachin_tendulkar.jpg">
+                </div>
+                <div id="d4" class="col">
+                    <img src="https://s3.scoopwhoop.com/anj2/5fc7582718ac8102fbac7f66/91a8bb08-0f7b-4b3d-9724-c474a25d75e8.jpg">
+                </div>
+               </div>
+               <div  class="row">
+                <div class="col">
+                    <img src="https://www.quirkybyte.com/wp-content/uploads/2016/06/Sachin-Tendulkar.jpg">
+                </div>
+                <div id="d2" class="col">
+                    <img src="http://2.bp.blogspot.com/-RuOxok-RmdU/UXdNq5yagRI/AAAAAAAAhWU/5qq7rH3r3EM/s1600/Happy+Birthday+to+sachin+tendulkar+-+April+24+2.jpg">
+                </div>
+                <div id="d3" class="col">
+                    <img src="http://1.bp.blogspot.com/-PpE61gS0RAo/Tvs2tnTb5TI/AAAAAAAALC0/PawSDEGQXVU/s1600/sachin_tendulkar-normal.jpg">
+                </div>
+                <div id="d4" class="col">
+                    <img src="https://www.ballebaazi.com/blog/wp-content/uploads/2019/04/sachin.jpg">
+                </div>
+               </div>
+               <div  class="row">
+                <div class="col">
+                    <img src="https://popslider.com/wp-content/uploads/2020/09/Sachin-Tendulkar-1068x801.jpg">
+                </div>
+                <div id="d2" class="col">
+                    <img src="http://drcricket7.com/india/wp-content/uploads/2014/09/Sachin-Tendulkar.jpg">
+                </div>
+                <div id="d3" class="col">
+                    <img src="http://thecommonmanspeaks.com/wp-content/uploads/2012/03/Sachin-100th-century2.jpg">
+                </div>
+                <div id="d4" class="col">
+                    <img src="http://1.bp.blogspot.com/-IJ3D-vUUWmY/TiuJZDtTfoI/AAAAAAAADNY/cFcYxW9ydLA/s1600/Sachin+Tendulkar+6.jpg">
+                </div>
+               </div>
+                <div class="par">
+
+                    <p>Sachin Ramesh Tendulkar AO BR (/ˌsʌtʃɪn tɛnˈduːlkər/ (listen); pronounced [sət͡ʃin t̪eːɳɖulkəɾ]; born 24 April 1973) is an Indian former international cricketer who captained the Indian national team. He is regarded as one of the greatest batsmen in the history of cricket and popularly known as God of Cricket by his fans. He was a right-handed top-order bastmen in the Indian Cricket Team. He is known for his batting skills, technique, vision and game reading.[4] He is the all time most runscorer in both ODI and Test Format with more than 18000 runs and 15000 runs respectively in total. He also holds the record for receiving most Man-of-the-match awards in International Cricket with all forms combined.
+    
+                        Tendulkar took up cricket at the age of eleven, made his Test match debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. In 2002, halfway through his career, Wisden ranked him the second-greatest Test batsman of all time, behind Don Bradman, and the second-greatest ODI batsman of all time, behind Viv Richards. Later in his career, Tendulkar was part of the Indian team that won the 2011 Cricket World Cup, his first win in six World Cup appearances for India. He had previously been named "Player of the Tournament" at the 2003 edition of the tournament.
+                        
+                        Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievements, the Khel Ratna Award, India's highest sporting honour, in 1997, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, two of India's highest civilian awards. A few hours after the end of his last match in November 2013, the Prime Minister's Office announced the decision to award him the Bharat Ratna, India's highest civilian award. As of 2021, he is the youngest recipient to date and was the first sportsperson to receive the award. In 2012, Tendulkar was nominated to the Rajya Sabha, the upper house of the Parliament of India.
+                        
+                        He is sometimes referred to as "The God of Cricket" in India. A film with that name was released in 2021. In 2010, Time magazine included Tendulkar in its annual Time 100 list as one of the most influential people in the world.Tendulkar was awarded the Sir Garfield Sobers Trophy for cricketer of the year at the 2010 ICC Awards. Having retired from ODI cricket in 2012, he retired from all forms of cricket in November 2013 after playing his 200th Test match. Tendulkar played 664 international cricket matches in total, scoring 34,357 runs. In 2013, Tendulkar was included in an all-time Test World XI compiled in 2013 to mark the 150th anniversary of Wisden Cricketers' Almanack, and he was the only specialist batsman of the post–World War II era, along with Viv Richards, to get featured in the team. In 2019 he was inducted into the ICC Cricket Hall of Fame</p><p>Sachin Ramesh Tendulkar AO BR (/ˌsʌtʃɪn tɛnˈduːlkər/ (listen); pronounced [sət͡ʃin t̪eːɳɖulkəɾ]; born 24 April 1973) is an Indian former international cricketer who captained the Indian national team. He is regarded as one of the greatest batsmen in the history of cricket and popularly known as God of Cricket by his fans. He was a right-handed top-order bastmen in the Indian Cricket Team. He is known for his batting skills, technique, vision and game reading.[4] He is the all time most runscorer in both ODI and Test Format with more than 18000 runs and 15000 runs respectively in total. He also holds the record for receiving most Man-of-the-match awards in International Cricket with all forms combined.
+        
+                            Tendulkar took up cricket at the age of eleven, made his Test match debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. In 2002, halfway through his career, Wisden ranked him the second-greatest Test batsman of all time, behind Don Bradman, and the second-greatest ODI batsman of all time, behind Viv Richards. Later in his career, Tendulkar was part of the Indian team that won the 2011 Cricket World Cup, his first win in six World Cup appearances for India. He had previously been named "Player of the Tournament" at the 2003 edition of the tournament.
+                            
+                            Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievements, the Khel Ratna Award, India's highest sporting honour, in 1997, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, two of India's highest civilian awards. A few hours after the end of his last match in November 2013, the Prime Minister's Office announced the decision to award him the Bharat Ratna, India's highest civilian award. As of 2021, he is the youngest recipient to date and was the first sportsperson to receive the award. In 2012, Tendulkar was nominated to the Rajya Sabha, the upper house of the Parliament of India.
+                            
+                            He is sometimes referred to as "The God of Cricket" in India. A film with that name was released in 2021. In 2010, Time magazine included Tendulkar in its annual Time 100 list as one of the most influential people in the world.Tendulkar was awarded the Sir Garfield Sobers Trophy for cricketer of the year at the 2010 ICC Awards. Having retired from ODI cricket in 2012, he retired from all forms of cricket in November 2013 after playing his 200th Test match. Tendulkar played 664 international cricket matches in total, scoring 34,357 runs. In 2013, Tendulkar was included in an all-time Test World XI compiled in 2013 to mark the 150th anniversary of Wisden Cricketers' Almanack, and he was the only specialist batsman of the post–World War II era, along with Viv Richards, to get featured in the team. In 2019 he was inducted into the ICC Cricket Hall of Fame</p>
+                            <p>Sachin Ramesh Tendulkar AO BR (/ˌsʌtʃɪn tɛnˈduːlkər/ (listen); pronounced [sət͡ʃin t̪eːɳɖulkəɾ]; born 24 April 1973) is an Indian former international cricketer who captained the Indian national team. He is regarded as one of the greatest batsmen in the history of cricket and popularly known as God of Cricket by his fans. He was a right-handed top-order bastmen in the Indian Cricket Team. He is known for his batting skills, technique, vision and game reading.[4] He is the all time most runscorer in both ODI and Test Format with more than 18000 runs and 15000 runs respectively in total. He also holds the record for receiving most Man-of-the-match awards in International Cricket with all forms combined.
+        
+                                Tendulkar took up cricket at the age of eleven, made his Test match debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. In 2002, halfway through his career, Wisden ranked him the second-greatest Test batsman of all time, behind Don Bradman, and the second-greatest ODI batsman of all time, behind Viv Richards. Later in his career, Tendulkar was part of the Indian team that won the 2011 Cricket World Cup, his first win in six World Cup appearances for India. He had previously been named "Player of the Tournament" at the 2003 edition of the tournament.
+                                
+                                Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievements, the Khel Ratna Award, India's highest sporting honour, in 1997, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, two of India's highest civilian awards. A few hours after the end of his last match in November 2013, the Prime Minister's Office announced the decision to award him the Bharat Ratna, India's highest civilian award. As of 2021, he is the youngest recipient to date and was the first sportsperson to receive the award. In 2012, Tendulkar was nominated to the Rajya Sabha, the upper house of the Parliament of India.
+                                
+                                He is sometimes referred to as "The God of Cricket" in India. A film with that name was released in 2021. In 2010, Time magazine included Tendulkar in its annual Time 100 list as one of the most influential people in the world.Tendulkar was awarded the Sir Garfield Sobers Trophy for cricketer of the year at the 2010 ICC Awards. Having retired from ODI cricket in 2012, he retired from all forms of cricket in November 2013 after playing his 200th Test match. Tendulkar played 664 international cricket matches in total, scoring 34,357 runs. In 2013, Tendulkar was included in an all-time Test World XI compiled in 2013 to mark the 150th anniversary of Wisden Cricketers' Almanack, and he was the only specialist batsman of the post–World War II era, along with Viv Richards, to get featured in the team. In 2019 he was inducted into the ICC Cricket Hall of Fame</p>
+
+
+                </div>
+                
+            </section>
+
+        </div>
+    
+
+</header>
+<div class="line"><section id="videos">
+    <h1><b>Videos</b></h1>
+    <iframe width="1128" height="635" src="https://www.youtube.com/embed/ReJFqAjlENs" title="Best Online Embedded Systems Course - Emertxe | Student Review | Sachin  placed at Botsync" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="1128" height="1128px" src="https://en.wikipedia.org/wiki/Sachin_Tendulkar" frameborder="0"></iframe>
+
+</section></div>
+
+
+    
+</body>
+</html>
